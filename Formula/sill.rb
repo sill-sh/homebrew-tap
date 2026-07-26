@@ -18,20 +18,20 @@ class Sill < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "dceda7e1aaa5bc3a838b9b6cce777b97b40a88e96679649a9f80c7f38ce52993"
+      sha256 "PLACEHOLDER_SHA256_AARCH64_APPLE_DARWIN"
     else
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "21f63f0dc8c3930d9b305a85da7e3e5217385a165432c32c9cda14c120cd4dbf"
+      sha256 "PLACEHOLDER_SHA256_X86_64_APPLE_DARWIN"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d54efa28d66fe5d0b10dca899e6428505e1f408b80fc47edcf671c1cd864a9c6"
+      sha256 "PLACEHOLDER_SHA256_X86_64_UNKNOWN_LINUX_GNU"
     else
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "98b461f2556d4446602336297bfc1775ce7c916825862b29125ebc6ec3cfa0dd"
+      sha256 "PLACEHOLDER_SHA256_AARCH64_UNKNOWN_LINUX_GNU"
     end
   end
 
