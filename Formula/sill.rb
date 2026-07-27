@@ -12,26 +12,26 @@
 class Sill < Formula
   desc "Report which CLIs can be credential-brokered, and which cannot"
   homepage "https://sill.sh"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "749e1ab718d1ae0d2561afd93ec2377406fb7b4ef9f75ce02f1fdcdbd303c93a"
+      sha256 "e6dcb1784b177400bdabec9e2dd95566df00322bb788213f228e76f0f01a405a"
     else
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "f75d39aad357ade882cef502293bf6d162e08f6d56c12c90455b6ceef7b49626"
+      sha256 "6399679fc2eb095027541455e2b6f50ad3a303b8c6328ac87fd8952d26598b64"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "043a533b51f8ad9ff76383dfba11d0eb2277e1d95709fde1fb37e8b4776ad6ae"
+      sha256 "470fd9734fd60eb842ea978b558a0399c9813e6441bf4568c255c827eeebcd4a"
     else
       url "https://github.com/sill-sh/client/releases/download/v#{version}/sill-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "67d1c37996bc3a0f024212f1dc2daefa50724682175df152fc6c1c4e31b3ccab"
+      sha256 "69b6d40ddc3a144aa2c4feaeaaba10be9fddfe35cee358a52ba838c5d1384419"
     end
   end
 
